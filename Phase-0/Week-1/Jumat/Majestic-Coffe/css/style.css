@@ -1,0 +1,142 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    background: brown;
+}
+
+.nav-bar .logo {
+    height: 36px;
+    width: 36px;
+    padding: 12px;
+}
+
+.welcome-message {
+    color: brown;
+    padding: 56px 0px 24px 0px
+}
+
+.nav-bar > a{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: Georgia;
+    font-weight: bold;
+    align-items: center;
+    justify-self: end;
+    color: white;
+    margin-right: 24px;
+}
+
+.container-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-item {
+    flex: 1;
+    margin: 8px;
+    border-width: 1px;
+    border-style: solid;
+    padding-bottom: 12px;
+    border-radius: 8px;
+    border-color: #DDD;
+    overflow: hidden;
+}
+
+div.content {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.desc{
+    padding: 12px 0px;
+}
+
+div.card-footer {
+    padding-left: 12px;
+    padding-right: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.btn-order {
+    padding-right: 24px;
+    padding-left: 24px;
+    padding-top: 8px;
+    background: brown;
+    color: white;
+    padding-bottom: 8px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+
+.btn-order:hover{
+    background-color: black;
+}
+
+.header {
+    position: relative;
+}
+
+.header img{
+    width: 100%;
+    height: 320px;
+}
+
+.header .title {
+    position: absolute;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    top: 0;
+    left: 0;
+    background-color: #555;
+    color: white;
+    font-size: 24px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+}
+
+.btn-checkout{
+    padding: 12px 24px;
+    margin: 24px 8px;
+    background: orangered;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    border-radius: 8px;
+}
+
+.btn-checkout:hover{
+    background-color: #555;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 48px;
+    margin-right: 48px;
+}
+
+div.footer{
+    height: 160px;
+    background: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
