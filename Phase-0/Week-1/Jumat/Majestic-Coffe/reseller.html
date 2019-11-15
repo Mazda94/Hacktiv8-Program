@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Majestic Coffee</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+            <img class="logo" src="assets/coffee.png">
+            <a href="index.html">Home</a>
+            <!-- Link menuju halaman cara order.
+            Halaman cara order berisi informasi mengenai tata cara pemesanan di outlet Majestic coffe. -->
+            <!-- <a href="caraorder.html">Mau Order?</a> -->
+            <!-- Link menuju halaman outlet.
+            Halaman outlet berisi informasi mengenai deskripsi outlet, alamat, kontak yang dapat dihubungi dan sebagainya -->
+            <a href="outlet.html">Outlet Kami</a>
+            <a href="reseller.html">Reseller?</a>
+        </nav>
+    </header>
+
+    <div class="container-reseller">
+        <div id="reseller">
+            <h3>Yuk ikutan jadi reseller kami, ada banyak penawaran menarik lho...</h3>
+            <br>
+            <br>
+            <h4>Isi form dibawah ini dulu ya...</h4>
+            <br>
+            <form action="index.html" class="form-reseller">
+                <label for="nama">Nama Lengkap :</label>
+                <input class="input-form" type="text" name="nama" id="nama">
+
+                <label for="phone">Nomor Handphone :</label>
+                <input class="input-form" type="text" name="phone" id="phone">
+
+                <label for="address">Alamat :</label>
+                <input class="input-form" type="text" name="address" id="address">
+
+                <p>Jenis Kelamin :</p>
+                <div class="gender">
+                    <input type="radio" name="gender" value="man">
+                    <p class="radio-label">Pria</p>
+                    <input class="radio-button" type="radio" name="gender" value="woman">
+                    <p class="radio-label">Wanita</p>
+                </div>
+
+                <input class="btn-order" type="submit" name="submit" id="submit" value="Daftar">
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <h3>Majestic Coffee</h3>
+            <br>
+            <p>Jl. Sultan Iskandar Muda No.7, RT.5/RW.9, Kby. Lama Sel., Kec. Kby. Lama, Kota Jakarta
+                Selatan, Daerah
+                Khusus Ibukota Jakarta 12240</p>
+        </div>
+    </footer>
+</body>
+
+</html>
