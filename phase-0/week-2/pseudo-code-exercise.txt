@@ -1,0 +1,61 @@
+******************************************************************
+1. Pseudo code menghitung resultan gaya pada hukum newton II
+
+DEKLARASI `massa`
+DEKLARASI `percepatan`
+DEKLARASI `resultan`
+
+TENTUKAN `massa` sama dengan 650
+TENTUKAN `percepatan` sama dengan 2
+
+HITUNG `resultan` dari `massa` DIKALI `percepatan`
+TAMPILKAN "Resultan gaya dari mobil dengan bobot `massa` kg dan `percepatan` m/s2 adalah `resultan` Newton"
+
+*******************************************************************
+2. Pseudo code menentukan sebuah tahun adalah kabisat atau bukan
+
+DEKLARASI `tahun`
+MASUKKAN sebuah tahun pada `tahun`
+IF SISA BAGI `tahun` dengan 4 SAMA DENGAN 0 THEN :
+    IF SISA BAGI `tahun` dengan 100 TIDAK SAMA DENGAN 0 THEN :
+        TAMPILKAN "`tahun` adalah tahun kabisat"
+    ELSE : 
+        IF SISA BAGI `tahun` dengan 400 SAMA DENGAN 0 THEN :
+            TAMPILKAN "`tahun` adalah tahun kabisat"
+        ELSE :
+            TAMPILKAN "`tahun` bukan tahun kabisat"
+        ENDIF
+    ENDIF 
+ELSE
+    TAMPILKAN "`tahun` bukan tahun kabisat"
+ENDIF
+
+*******************************************************************
+3. Pseudo code menghitung jumlah pakaian yang akan dimasukkan ke mesin cuci
+
+DEKLARASI `jumlah pakaian`
+DEKLARASI `pakaian`
+TENTUKAN `jumlah pakaian` sama dengan 20
+TENTUKAN `pakaian` sama dengan 1
+
+FOR `pakaian` KURANG DARI SAMA DENGAN `jumlah pakaian`
+    TAMPILKAN "Masukkan pakaian yang ke- `index`"
+    TAMBAHKAN `pakaian` dengan 1
+ENDFOR
+
+*******************************************************************
+4. Pseudo code memeriksa kuku murid
+
+DEKLARASI `jumlah siswa`
+DEKLARASI `siswa`
+TENTUKAN `jumlah siswa` sama dengan 40
+TENTUKAN `siswa` sama dengan 1
+
+FOR `siswa` KURANG DARI SAMA DENGAN `jumlah siswa`
+    IF `siswa` SAMA DENGAN "kuku panjang" THEN :
+        TAMPILKAN "`siswa` Berdiri di depan tiang bendera sampai waktu istirahat tiba"
+    ELSE :
+        TAMPILKAN "Kamu pintar ya `siswa`, jaga terus ya kebersihan kukunya. . ."
+    ENDIF
+    TAMBAHKAN `siswa` dengan 1
+ENDFOR
