@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+  <h1>Challenge IF ELSE Hacktiv8</h1>
+  <hr/>
+  <p id='welcome_message'></p>
+  <p id='description'></p>
+</body>
+  
+  <script>
+    let nama = 'Ali'
+    // peran dalam game ada tiga : Ksatria, Tabib, Penyihir
+    let peran = 'Penyihir' 
+    
+    if(nama === ''){
+      console.log('Nama harus diisi')
+      document.getElementById('welcome_message').innerHTML = 'Nama harus diisi.'
+    } else {
+      console.log('Selamat datang di dunia Proxytia, ' + nama)
+      document.getElementById('welcome_message').innerHTML = 'Selamat datang di dunia Proxytia, ' + nama 
+     if(peran === ''){
+        console.log('Silahkan pilih peranmu.')
+        document.getElementById('description').innerHTML = 'Silahkan pilih peranmu.'
+      } else {
+        if(peran === 'Ksatria'){
+         console.log('Halo ' + peran + ' ' + nama + ', kamu dapat menyerang dengan senjatamu.')
+         document.getElementById('description').innerHTML = 'Halo ' + peran + ' ' + nama + ', kamu dapat menyerang dengan senjatamu.' 
+        }
+        
+        if(peran === 'Tabib'){
+         console.log('Halo ' + peran + ' ' + nama + ', kamu akan membantu temanmu yang terluka.')
+         document.getElementById('description').innerHTML = 'Halo ' + peran + ' ' + nama + ', kamu akan membantu temanmu yang terluka.' 
+        }
+        
+        if(peran === 'Penyihir'){
+         console.log('Halo ' + peran + ' ' + nama + ', ciptakan keajaiban yang membantu kemenanganmu!')
+         document.getElementById('description').innerHTML = 'Halo ' + peran + ' ' + nama + ', ciptakan keajaiban yang membantu kemenanganmu!' 
+        }
+      }
+    }
+    
+  </script>
+</html>
