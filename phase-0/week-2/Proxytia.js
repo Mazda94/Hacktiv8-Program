@@ -18,19 +18,24 @@ var peran;
 // Assign nama dengan "Nama kamu"
 nama = "Ali";
 // Peran tersedia "Ksatria", "Tabib", "Penyihir"
-peran = "Tabib";
+peran = "Cheff";
 
 // Cek isi variable
-if (peran === "") {
-    console.log("Pilih peranmu untuk memulai game");
+if (nama === "") {
+    console.log("Nama harus diisi!!");
 } else {
-    if (peran === "Ksatria") {
-        console.log("Selamat datang " + peran + " " + nama + ", tunjukkan semangat berjuangmu!");
-    } else if (peran === "Tabib") {
-        console.log("Selamat datang " + peran + " " + nama + ", dengan keahlianmu, sembuhkan ksatriamu!");
-    } else if (peran === "Penyihir") {
-        console.log("Selamat datang " + peran + " " + nama + ", tunjukkan sihir terbaikmu!");
+    if (peran === "") {
+        console.log("Selamat datang " + nama + ", Pilih peranmu untuk memulai game");
     } else {
-        console.log('Oppss. . . Peran yang kamu pilih tidak tersedia. Peran yang tersedia : "Ksatria", "Tabib" dan "Penyihir"');
+        console.log("Selamat datang di Dunia Proxytia, " + nama);
+        if (peran === "Ksatria") {
+            console.log("Halo " + peran + " " + nama + ", kamu dapat menyerang dengan senjatamu");
+        } else if (peran === "Tabib") {
+            console.log("Halo " + peran + " " + nama + ", kamu akan membantu temanmu yang terluka.");
+        } else if (peran === "Penyihir") {
+            console.log("Halo " + peran + " " + nama + ", ciptakan keajaiban yang membantu kemenanganmu!");
+        } else {
+            console.log('Oppss. . . Peran yang kamu pilih tidak tersedia. Peran yang tersedia : "Ksatria", "Tabib" dan "Penyihir"');
+        }
     }
 }
