@@ -37,13 +37,13 @@ console.log('=============================================');
 console.log('2. Melakukan Looping Menggunakan For');
 console.log('=============================================');
 console.log('LOOPING PERTAMA');
-for (let i = 1; i <= 20; i++) {
+for (var i = 1; i <= 20; i++) {
     console.log(i + ' - I love coding');
 }
 
 
 console.log('LOOPING KEDUA');
-for (let j = 20; j >= 1; j--) {
+for (var j = 20; j >= 1; j--) {
     console.log(j + ' - I will become fullstack developer');
 }
 console.log('');
@@ -68,7 +68,7 @@ console.log('=============================================');
 console.log('3. Angka Ganjil dan Genap');
 console.log('=============================================');
 console.log('');
-for (let i = 1; i <= 100; i++) {
+for (var i = 1; i <= 100; i++) {
     if (i % 2 === 0) {
         console.log('GENAP');
     } else {
@@ -81,7 +81,7 @@ console.log('=============================================');
 console.log('3. Counter kelipatan 3');
 console.log('=============================================');
 console.log('');
-for (let i = 1; i <= 100; i += 2) {
+for (var i = 1; i <= 100; i += 2) {
     if (i % 3 === 0) {
         console.log(i + " KELIPATAN 3");
     } else {
@@ -95,7 +95,7 @@ console.log('=============================================');
 console.log('3. Counter kelipatan 6');
 console.log('=============================================');
 console.log('');
-for (let i = 1; i <= 100; i += 5) {
+for (var i = 1; i <= 100; i += 5) {
     if (i % 6 === 0) {
         console.log(i + " KELIPATAN 6");
     } else {
@@ -109,7 +109,7 @@ console.log('=============================================');
 console.log('3. Counter kelipatan 10');
 console.log('=============================================');
 console.log('');
-for (let i = 1; i <= 100; i += 9) {
+for (var i = 1; i <= 100; i += 9) {
     if (i % 10 === 0) {
         console.log(i + " KELIPATAN 10");
     } else {
