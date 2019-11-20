@@ -38,10 +38,10 @@ DEKLARASI `pakaian`
 TENTUKAN `jumlah pakaian` sama dengan 20
 TENTUKAN `pakaian` sama dengan 1
 
-FOR `pakaian` KURANG DARI SAMA DENGAN `jumlah pakaian`
+WHILE `pakaian` KURANG DARI SAMA DENGAN `jumlah pakaian`
     TAMPILKAN "Masukkan pakaian yang ke- `index`"
     TAMBAHKAN `pakaian` dengan 1
-ENDFOR
+ENDWHILE
 
 *******************************************************************
 4. Pseudo code memeriksa kuku murid
@@ -51,11 +51,11 @@ DEKLARASI `siswa`
 TENTUKAN `jumlah siswa` sama dengan 40
 TENTUKAN `siswa` sama dengan 1
 
-FOR `siswa` KURANG DARI SAMA DENGAN `jumlah siswa`
+WHILE `siswa` KURANG DARI SAMA DENGAN `jumlah siswa`
     IF `siswa` SAMA DENGAN "kuku panjang" THEN :
         TAMPILKAN "`siswa` Berdiri di depan tiang bendera sampai waktu istirahat tiba"
     ELSE :
         TAMPILKAN "Kamu pintar ya `siswa`, jaga terus ya kebersihan kukunya. . ."
     ENDIF
     TAMBAHKAN `siswa` dengan 1
-ENDFOR
+ENDWHILE
