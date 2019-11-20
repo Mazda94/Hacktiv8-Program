@@ -78,6 +78,7 @@ a {
 .left a:hover,
 .right a:hover {
     background: rgba(0, 0, 0, .80);
+    color: gold;
 }
 
 .left a:hover {
@@ -115,7 +116,7 @@ a {
     color: black;
     text-align: center;
     padding: 12px;
-    margin: 0px 24px;
+    margin: 0px 16px;
     text-decoration: none;
     font-size: 18px;
     line-height: 25px;
@@ -124,14 +125,14 @@ a {
 }
 
 .header a.logo {
-    font-size: 25px;
+    font-size: 24px;
     font-weight: bolder;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
 }
 
 .header a.logo:hover {
     background: none;
-    color: wheat;
+    color: rgb(255, 215, 0);
 }
 
 .nav-bar {
@@ -140,7 +141,8 @@ a {
 
 .header a:hover {
     background-color: rgba(255, 255, 255, .25);
-    color: black;
+    color: rgb(255, 215, 0);
+    font-weight: bolder;
 }
 
 .header a.active {
