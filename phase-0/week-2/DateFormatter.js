@@ -7,9 +7,9 @@ var tanggal;
 var bulan;
 var tahun;
 
-tanggal = -1; // tanggal yang tersedia 1 s/d 31
-bulan = 12; // bulan yang tersedia 1 s/d 12
-tahun = 2200; // tahun yang tersedia 1900 s/d 2200
+tanggal = 20; // tanggal yang tersedia 1 s/d 31
+bulan = 11; // bulan yang tersedia 1 s/d 12
+tahun = 2019; // tahun yang tersedia 1900 s/d 2200
 
 // cek variable tanggal
 if (tanggal > 0) {
