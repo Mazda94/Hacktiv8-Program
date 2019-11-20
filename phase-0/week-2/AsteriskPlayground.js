@@ -25,10 +25,10 @@ console.log('=====================================');
 
 var rows2;
 for (rows2 = 0; rows2 < 5; rows2++) {
-    for (let j = 0; j < 5; j++) {
+    for (var j = 0; j < 5; j++) {
         process.stdout.write('*');
     }
-    console.log('')
+    console.log('');
 }
 
 
@@ -45,7 +45,7 @@ console.log('=====================================');
 
 var rows3;
 for (rows3 = 0; rows3 <= 5; rows3++) {
-    for (let j = 0; j < rows3; j++) {
+    for (var j = 0; j < rows3; j++) {
         process.stdout.write('*');
     }
     console.log('');
