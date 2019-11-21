@@ -18,7 +18,7 @@ var peran;
 // Assign nama dengan "Nama kamu"
 nama = "Ali";
 // Peran tersedia "Ksatria", "Tabib", "Penyihir"
-peran = "Cheff";
+peran = "Tabib";
 
 // Cek isi variable
 if (nama === "") {
