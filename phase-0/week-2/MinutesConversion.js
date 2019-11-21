@@ -16,6 +16,9 @@ function konversiMenit(menit) {
     } else {
         newSecond = second;
     }
+
+    // Sebenarnya ada function Math.floor() untuk membulatkan angka ke bawah, namun karena saya di berikan kesempatan
+    // untuk belajar di Hacktiv8, maka akan saya manfaatkan sebaik2nya untuk membedah bagaimana fungsi2 bawaan di Javascript bekerja
     for (let i = 0; i < minutes.length; i++) {
         if (minutes[i] !== '.') {
             newMinutes += minutes[i];

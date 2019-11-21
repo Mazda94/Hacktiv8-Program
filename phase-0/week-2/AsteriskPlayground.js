@@ -26,6 +26,8 @@ console.log('=====================================');
 var rows2;
 for (rows2 = 0; rows2 < 5; rows2++) {
     for (var j = 0; j < 5; j++) {
+        // process.stdout.write() merupakan fungsi untuk menampilkan character/string
+        // sedangkan console.log() memanggil fungsi process.stdout.write() yang di tambahkan dengan line break "\n"
         process.stdout.write('*');
     }
     console.log('');
