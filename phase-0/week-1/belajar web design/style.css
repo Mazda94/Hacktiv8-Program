@@ -1,17 +1,20 @@
-@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+/* @import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css?family=Merienda:400,700&display=swap');
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: 'Ubuntu', sans-serif;
+    /* font-family: 'Ubuntu', sans-serif; */
+    font-family: 'Merienda', cursive;
 }
 
 body {
-    background: #000428;
+    background: #00c6ff;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #004e92, #000428);
+    background: -webkit-linear-gradient(to left, #0072ff, #00c6ff);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #004e92, #000428);
+    background: linear-gradient(to left, #0072ff, #00c6ff);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
@@ -43,7 +46,7 @@ a {
     background-size: 100% 100%;
     border-top-right-radius: 12px;
     border-bottom-right-radius: 12px;
-    opacity: .75;
+    opacity: .65;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
@@ -52,21 +55,22 @@ a {
 
 .right:hover,
 .left:hover {
-    opacity: 1;
-    box-shadow: 0px -8px 24px rgba(255, 255, 255, .25);
+    opacity: .85;
+    box-shadow: 0px -8px 24px rgba(255, 255, 255, .5);
 }
 
 .right h1,
 .left h1 {
     text-align: center;
-    margin-top: 10vmin;
+    margin-top: 8vmin;
     color: #004e92;
+    text-shadow: 4px -4px 4px rgba(0, 0, 0, .5);
 }
 
 .right .quotes,
 .left .quotes {
     text-align: center;
-    margin-top: 40vh;
+    margin-top: 36vmin;
     color: whitesmoke;
     margin-right: 8vmin;
     margin-left: 8vmin;
@@ -92,7 +96,7 @@ a {
 }
 
 .right {
-    opacity: .75;
+    opacity: .65;
     background: url(bg-code.jpg);
     height: 75vh;
     width: 49%;
@@ -158,7 +162,7 @@ a {
 .vertical-center-left {
     margin: 0;
     position: absolute;
-    top: 50%;
+    top: 50vmin;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 }
@@ -167,25 +171,116 @@ a {
     margin: 0;
     position: absolute;
     right: 0;
-    top: 50%;
+    top: 50vmin;
     transform: translate(0, -50%);
 }
 
+#profile {
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+}
+
+.content {
+    margin: 4vmin;
+    padding: 2vmin;
+}
+
+#profile h1 {
+    text-align: center;
+    color: white;
+    text-shadow: 4px -12px 12px rgba(0, 0, 0, .5);
+    letter-spacing: 4px;
+}
+
+#profile .img-profile {
+    height: 75vh;
+    width: 30%;
+    float: left;
+    opacity: .85;
+    box-shadow: 8px 8px 24px rgba(0, 0, 0, .25);
+    background: url('img-profile.jpg');
+    background-size: 100% 100%;
+}
+
+#profile .right {
+    width: 69%;
+    height: 75vh;
+    box-shadow: 8px 8px 24px rgba(0, 0, 0, .25);
+    background: none;
+    border-radius: 0px;
+    opacity: 1;
+    padding: 4vmin;
+}
+
+#profile .bio,
+#profile .school {
+    height: 100%;
+    width: 49.5%;
+    display: inline-block;
+    color: whitesmoke;
+}
+
+.school>div {
+    width: 50%;
+    height: 50%;
+    float: left;
+    display: flex;
+    padding: 24px;
+    box-shadow: 12px 12px 6px rgba(0, 0, 0, .25);
+    background: url(bg-mount.jpg);
+    background-size: 100% 100%;
+}
+
+.bio table {
+    width: 100%;
+    color: whitesmoke;
+}
+
+td,
+th {
+    text-align: left;
+    padding: 8px;
+}
+
 @media screen and (max-width: 800px) {
-    .left {
+    .right,
+    .left,
+    #profile {
         width: 100%;
+        height: 100%;
         border-radius: 0px;
-    }
-    .right {
-        width: 100%;
-        border-radius: 0px;
+        display: inline-block;
     }
     .vertical-center-right {
         margin: 0;
         position: absolute;
         right: 0;
-        top: 125%;
+        top: 150%;
         transform: translate(0, -50%);
+    }
+    #profile .img-profile {
+        width: 90%;
+        height: 80%;
+        margin: 10% 5%;
+        border-radius: 12px;
+        display: inline-block;
+        background: url('img-profile.jpg');
+        background-size: 100% 100%;
+    }
+    #profile .right {
+        width: 100%;
+        height: 100%;
+        border-radius: 0px;
+        display: inline-block;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    #profile .bio,
+    #profile .school {
+        height: 100%;
+        width: 100%;
+        display: inline-block;
     }
 }
 
@@ -205,5 +300,43 @@ a {
         float: none;
         text-align: center;
         display: block;
+    }
+    .vertical-center-left {
+        margin: 0;
+        position: absolute;
+        top: 70vmin;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    .vertical-center-right {
+        margin: 0;
+        position: absolute;
+        right: 0;
+        top: 150vmin;
+        transform: translate(0, -50%);
+    }
+    .right,
+    .left {
+        width: 100%;
+        height: 50%;
+        border-radius: 0px;
+        display: inline-block;
+    }
+    #profile .img-profile {
+        width: 90%;
+        height: 80%;
+        margin: 10% 5%;
+        border-radius: 12px;
+        display: inline-block;
+        background: url('img-profile.jpg');
+        background-size: 100% 100%;
+    }
+    #profile .right {
+        width: 100%;
+        height: 100%;
+        border-radius: 0px;
+        display: inline-block;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
     }
 }
