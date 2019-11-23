@@ -26,6 +26,12 @@ function konversiMenit(menit) {
             break;
         }
     }
+
+    // Using Math.floor()
+    // minutes = Math.floor(minutes);
+    // return minutes + ':' + newSecond;
+
+    // Using for loop
     return newMinutes + ':' + newSecond;
 }
 

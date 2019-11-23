@@ -1,25 +1,13 @@
-/* @import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap'); */
-
-@import url('https://fonts.googleapis.com/css?family=Merienda:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Alata|Calistoga&display=swap');
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    /* font-family: 'Ubuntu', sans-serif; */
-    font-family: 'Merienda', cursive;
+    font-family: 'Alata', sans-serif;
 }
 
 body {
-    background: #00c6ff;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #0072ff, #00c6ff);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #0072ff, #00c6ff);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-a {
-    text-decoration: none;
+    background: #FFFFFF;
 }
 
 .explore,
@@ -34,43 +22,48 @@ a {
     height: 100%;
     width: 100%;
     display: block;
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, .25);
 }
 
 .left {
-    background: lightgrey;
     height: 75vh;
     width: 49%;
     float: left;
     margin-right: .5%;
-    background: url(bg-mount-1.jpg);
+    background: url(assets/journey.png);
     background-size: 100% 100%;
-    border-top-right-radius: 12px;
     border-bottom-right-radius: 12px;
-    opacity: .65;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    box-shadow: 8px 8px 24px rgba(0, 0, 0, .25);
+    opacity: .9;
 }
 
 .right:hover,
 .left:hover {
-    opacity: .85;
-    box-shadow: 0px -8px 24px rgba(255, 255, 255, .5);
+    box-shadow: 8px 8px 24px rgba(0, 0, 0, .25);
+    opacity: 1;
 }
 
-.right h1,
-.left h1 {
-    text-align: center;
-    margin-top: 8vmin;
-    color: #004e92;
+.right h2,
+.left h2 {
+    margin-top: 2vmin;
     text-shadow: 4px -4px 4px rgba(0, 0, 0, .5);
+    margin: 8px 24px;
+}
+
+.right h2 {
+    text-align: start;
+}
+
+.left h2 {
+    text-align: end;
 }
 
 .right .quotes,
 .left .quotes {
     text-align: center;
-    margin-top: 36vmin;
+    margin-top: 40vmin;
     color: whitesmoke;
     margin-right: 8vmin;
     margin-left: 8vmin;
@@ -86,26 +79,22 @@ a {
 }
 
 .left a:hover {
-    border-top-right-radius: 12px;
     border-bottom-right-radius: 12px;
 }
 
 .right a:hover {
-    border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
 }
 
 .right {
-    opacity: .65;
-    background: url(bg-code.jpg);
+    background: url(assets/code.png);
     height: 75vh;
     width: 49%;
     float: right;
     margin-left: .5%;
     background-size: 100% 100%;
-    border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
-    box-shadow: 8px 8px 24px rgba(0, 0, 0, .25);
+    opacity: .9;
 }
 
 .header {
@@ -117,7 +106,6 @@ a {
 
 .header a {
     float: left;
-    color: black;
     text-align: center;
     padding: 12px;
     margin: 0px 16px;
@@ -125,7 +113,7 @@ a {
     font-size: 18px;
     line-height: 25px;
     border-radius: 4px;
-    color: white;
+    color: black;
 }
 
 .header a.logo {
@@ -144,19 +132,15 @@ a {
 }
 
 .header a:hover {
-    background-color: rgba(255, 255, 255, .25);
+    background-color: rgba(0, 0, 0, .25);
     color: rgb(255, 215, 0);
     font-weight: bolder;
-}
-
-.header a.active {
-    background-color: cadetblue;
-    color: whitesmoke;
 }
 
 .header .icon {
     display: none;
     text-align: center;
+    color: black;
 }
 
 .vertical-center-left {
@@ -186,55 +170,44 @@ a {
     padding: 2vmin;
 }
 
-#profile h1 {
+#contact h2,
+#profile h2 {
     text-align: center;
-    color: white;
     text-shadow: 4px -12px 12px rgba(0, 0, 0, .5);
     letter-spacing: 4px;
+    margin: 24px 0;
 }
 
 #profile .img-profile {
     height: 75vh;
     width: 30%;
     float: left;
-    opacity: .85;
     box-shadow: 8px 8px 24px rgba(0, 0, 0, .25);
-    background: url('img-profile.jpg');
+    background: url(assets/img-profile.jpg);
     background-size: 100% 100%;
 }
 
 #profile .right {
-    width: 69%;
+    width: 65%;
     height: 75vh;
     box-shadow: 8px 8px 24px rgba(0, 0, 0, .25);
-    background: none;
+    background: url(assets/profile.png);
     border-radius: 0px;
-    opacity: 1;
-    padding: 4vmin;
+    background-position-y: 100%;
+    background-position-x: 100%;
+    background-size: 50% 75%;
+    background-repeat: no-repeat;
 }
 
-#profile .bio,
-#profile .school {
+#profile .bio {
     height: 100%;
     width: 49.5%;
     display: inline-block;
-    color: whitesmoke;
-}
-
-.school>div {
-    width: 50%;
-    height: 50%;
-    float: left;
-    display: flex;
-    padding: 24px;
-    box-shadow: 12px 12px 6px rgba(0, 0, 0, .25);
-    background: url(bg-mount.jpg);
-    background-size: 100% 100%;
+    padding: 4vmin;
 }
 
 .bio table {
     width: 100%;
-    color: whitesmoke;
 }
 
 td,
@@ -243,12 +216,172 @@ th {
     padding: 8px;
 }
 
+#contact {
+    background: url(assets/contact_us.png);
+    background-size: 40% 75%;
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    background-position-x: 10%;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+#contact .contact-form {
+    width: 50%;
+    height: 100%;
+    float: right;
+    padding: 4vmin;
+}
+
+.form {
+    display: inline-block;
+    padding: 12px 0;
+    width: 100%;
+}
+
+.form h3 {
+    text-align: center;
+    margin: 2vmin;
+    border: none;
+}
+
+.form button {
+    padding: 12px;
+    background: teal;
+    border: none;
+    color: whitesmoke;
+    outline: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.form input,
+.form textarea {
+    width: 100%;
+    margin: 2vmin 0;
+    resize: none;
+    padding: 2vmin;
+}
+
+.form textarea {
+    height: 20vh;
+}
+
+label {
+    margin: 12px 0;
+}
+
+#footer {
+    display: inline-block;
+    height: 24vmin;
+    width: 100%;
+    box-shadow: 0px -12px 48px rgba(0, 0, 0, .5);
+}
+
+#footer h4 {
+    text-align: center;
+    margin: 8vmin 0;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: teal;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+#project .main-container {
+    background: url(assets/project_bg.png);
+    background-size: 40% 75%;
+    background-repeat: no-repeat, repeat;
+    background-position-y: 50%;
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+}
+
+#project .thumbnail {
+    width: 59%;
+    float: right;
+    height: 100%;
+    padding: 4vmin;
+}
+
+#project h4,
+#project a,
+#project h2 {
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    padding: 12px 0;
+}
+
+#project h4:hover {
+    background: rgba(0, 0, 0, .25);
+}
+
+#project img {
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, .25);
+}
+
+#skill .main-container {
+    background: url(assets/skill.png);
+    background-size: 40% 75%;
+    background-repeat: no-repeat, repeat;
+    background-position-y: 50%;
+    background-position-x: 100%;
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+}
+
+#hacktiv8 .main-container {
+    background: url(assets/hacktiv8.png);
+    background-size: 30% 60%;
+    background-repeat: no-repeat, repeat;
+    background-position-y: 50%;
+    background-position-x: 10%;
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+}
+
+#skill h2,
+#hacktiv8 h2 {
+    padding: 12px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
 @media screen and (max-width: 800px) {
     .right,
     .left,
     #profile {
         width: 100%;
-        height: 100%;
+        height: 100vh;
         border-radius: 0px;
         display: inline-block;
     }
@@ -259,28 +392,46 @@ th {
         top: 150%;
         transform: translate(0, -50%);
     }
+    #profile {
+        display: inline;
+    }
     #profile .img-profile {
-        width: 90%;
-        height: 80%;
-        margin: 10% 5%;
-        border-radius: 12px;
+        width: 100%;
+        height: 100%;
         display: inline-block;
-        background: url('img-profile.jpg');
-        background-size: 100% 100%;
     }
     #profile .right {
         width: 100%;
-        height: 100%;
+        height: auto;
         border-radius: 0px;
         display: inline-block;
         border-top-right-radius: 0px;
         border-bottom-right-radius: 0px;
+        background-size: 100% 70%;
+        background-position: right bottom, left top;
+        background-repeat: no-repeat, repeat;
     }
-    #profile .bio,
-    #profile .school {
-        height: 100%;
+    #profile .bio {
+        height: 75vh;
         width: 100%;
         display: inline-block;
+    }
+    #contact {
+        background-size: 100% 100%;
+        height: 75vh;
+        display: inline-block;
+    }
+    #contact .contact-form {
+        width: 100%;
+        height: 100%;
+        float: none;
+        padding: 4vmin;
+    }
+    .contact-form>div {
+        padding: 4vmin;
+        background: rgba(0, 0, 0, .5);
+        border-radius: 12px;
+        color: whitesmoke;
     }
 }
 
@@ -302,17 +453,16 @@ th {
         display: block;
     }
     .vertical-center-left {
-        margin: 0;
-        position: absolute;
         top: 70vmin;
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
     }
+    .vertical-center-right {
+        top: 160vmin;
+    }
+    .vertical-center-left,
     .vertical-center-right {
         margin: 0;
         position: absolute;
         right: 0;
-        top: 150vmin;
         transform: translate(0, -50%);
     }
     .right,
@@ -322,21 +472,52 @@ th {
         border-radius: 0px;
         display: inline-block;
     }
+    #profile {
+        display: inline;
+    }
+    #profile h2,
+    #contact h2 {
+        margin: 1vmin 0;
+    }
     #profile .img-profile {
-        width: 90%;
-        height: 80%;
-        margin: 10% 5%;
-        border-radius: 12px;
+        width: 100%;
+        height: 50%;
         display: inline-block;
-        background: url('img-profile.jpg');
+        background: url(assets/img-profile.jpg);
         background-size: 100% 100%;
     }
     #profile .right {
         width: 100%;
-        height: 100%;
         border-radius: 0px;
         display: inline-block;
-        border-top-right-radius: 0px;
-        border-bottom-right-radius: 0px;
+        background-size: 75% 40%;
+        background-position-x: 100%;
+        background-position-y: 90%;
+        background-repeat: no-repeat, repeat;
+    }
+    .right .quotes,
+    .left .quotes {
+        margin-top: 48vmin;
+    }
+    .left h2 {
+        text-align: start;
+    }
+    #project .main-container {
+        width: 100%;
+        background-size: 75% 40%;
+        background-position-y: 90%;
+        background-position-x: 100%;
+    }
+    #project .thumbnail {
+        width: 100%;
+    }
+    #project h4 {
+        font-size: 12px;
+        text-align: center;
+    }
+    #skill .main-container {
+        width: 100%;
+        background-size: 75% 40%;
+        background-position-y: 90%;
     }
 }
