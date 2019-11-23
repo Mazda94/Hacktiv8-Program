@@ -357,8 +357,24 @@ label {
     display: inline-block;
 }
 
+#gallery,
+#trip,
+#wishlist .main-container {
+    background: url(assets/under_construction.png);
+    background-size: 50% 50%;
+    background-position-y: 50%;
+    background-position-x: 50%;
+    background-repeat: no-repeat, repeat;
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+}
+
 #skill h2,
-#hacktiv8 h2 {
+#hacktiv8 h2,
+#gallery h2,
+#trip h2,
+#wishlist h2 {
     padding: 12px 0;
     width: 100%;
     text-align: center;
@@ -502,11 +518,13 @@ label {
     .left h2 {
         text-align: start;
     }
-    #project .main-container {
+    #project .main-container,
+    #hacktiv8 .main-container,
+    #skill .main-container {
         width: 100%;
-        background-size: 75% 40%;
+        background-size: 60% 40%;
         background-position-y: 90%;
-        background-position-x: 100%;
+        background-position-x: 90%;
     }
     #project .thumbnail {
         width: 100%;
@@ -514,10 +532,5 @@ label {
     #project h4 {
         font-size: 12px;
         text-align: center;
-    }
-    #skill .main-container {
-        width: 100%;
-        background-size: 75% 40%;
-        background-position-y: 90%;
     }
 }
