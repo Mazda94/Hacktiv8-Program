@@ -187,27 +187,11 @@ body {
     background-size: 100% 100%;
 }
 
-#profile .right {
+#profile .story {
     width: 65%;
     height: 75vh;
-    box-shadow: 8px 8px 24px rgba(0, 0, 0, .25);
-    background: url(assets/profile.png);
-    border-radius: 0px;
-    background-position-y: 100%;
-    background-position-x: 100%;
-    background-size: 50% 75%;
-    background-repeat: no-repeat;
-}
-
-#profile .bio {
-    height: 100%;
-    width: 49.5%;
-    display: inline-block;
-    padding: 4vmin;
-}
-
-.bio table {
-    width: 100%;
+    padding: 0 24px;
+    float: left;
 }
 
 td,
@@ -393,6 +377,19 @@ label {
 }
 
 @media screen and (max-width: 800px) {
+    p {
+        letter-spacing: 0px;
+    }
+    h2 {
+        font-size: 32px;
+    }
+    .right .quotes,
+    .left .quotes {
+        margin-top: 72vmin;
+    }
+    .left h2 {
+        text-align: start;
+    }
     .right,
     .left,
     #profile {
@@ -416,16 +413,12 @@ label {
         height: 100%;
         display: inline-block;
     }
-    #profile .right {
+    #profile .story {
         width: 100%;
-        height: auto;
         border-radius: 0px;
         display: inline-block;
-        border-top-right-radius: 0px;
-        border-bottom-right-radius: 0px;
-        background-size: 100% 70%;
-        background-position: right bottom, left top;
-        background-repeat: no-repeat, repeat;
+        background: none;
+        padding: 12px;
     }
     #profile .bio {
         height: 75vh;
@@ -452,6 +445,10 @@ label {
 }
 
 @media screen and (max-width: 600px) {
+    p {
+        letter-spacing: 0px;
+        font-size: 12px;
+    }
     .nav-bar a {
         display: none;
     }
@@ -497,19 +494,18 @@ label {
     }
     #profile .img-profile {
         width: 100%;
-        height: 50%;
+        height: 100%;
         display: inline-block;
         background: url(assets/img-profile.jpg);
         background-size: 100% 100%;
     }
-    #profile .right {
+    #profile .story {
         width: 100%;
+        height: 100%;
         border-radius: 0px;
         display: inline-block;
-        background-size: 75% 40%;
-        background-position-x: 100%;
-        background-position-y: 90%;
-        background-repeat: no-repeat, repeat;
+        background: none;
+        padding: 24px;
     }
     .right .quotes,
     .left .quotes {
