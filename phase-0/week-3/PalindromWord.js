@@ -5,7 +5,7 @@
 // Function tersebut akan mengembalikan nilai true jika kata merupakan palindrome, dan false jika bukan. 
 // Kata palindrome adalah sebuah kata yang jika dibalik, tetap sama. Contoh, 'katak' dibalik tetaplah 'katak'.
 
-function palindrome(kata) {
+export default function palindrome(kata) {
     var reverseWord = '';
     for (let i = kata.length - 1; i >= 0; i--) {
         reverseWord += kata[i]
