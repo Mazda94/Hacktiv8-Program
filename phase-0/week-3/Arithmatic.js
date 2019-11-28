@@ -23,8 +23,8 @@ function tentukanDeretAritmatika(arr) {
 }
 
 // TEST CASES
-console.log(tentukanDeretAritmatika([1, 2, 3, 4, 5, 6])); // true
-console.log(tentukanDeretAritmatika([2, 4, 6, 12, 24])); // false
-console.log(tentukanDeretAritmatika([2, 4, 6, 8])); // true
-console.log(tentukanDeretAritmatika([2, 6, 18, 54])); // false
-console.log(tentukanDeretAritmatika([1, 2, 3, 4, 7, 9])); // false
+console.log('Apakah deret ini merupakan deret aritmatika "1, 2, 3, 4, 5, 6" ?', tentukanDeretAritmatika([1, 2, 3, 4, 5, 6])); // true
+console.log('Apakah deret ini merupakan deret aritmatika "2, 4, 6, 12, 24" ?', tentukanDeretAritmatika([2, 4, 6, 12, 24])); // false
+console.log('Apakah deret ini merupakan deret aritmatika "2, 4, 6, 8" ?', tentukanDeretAritmatika([2, 4, 6, 8])); // true
+console.log('Apakah deret ini merupakan deret aritmatika "2, 6, 18, 54" ?', tentukanDeretAritmatika([2, 6, 18, 54])); // false
+console.log('Apakah deret ini merupakan deret aritmatika "1, 2, 3, 4, 7, 9" ?', tentukanDeretAritmatika([1, 2, 3, 4, 7, 9])); // false
