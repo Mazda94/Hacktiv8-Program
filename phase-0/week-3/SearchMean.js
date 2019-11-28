@@ -23,8 +23,6 @@ function cariMean(arr) {
     if (result % 1 == 0) {
         return result
     } else {
-        // Proses pembulatan bilangan desimal ke atas
-        // cara lain dapat menggunakan fungsi Math.ceil(value)
         var strResult = String(result)
         var temp = ''
         for (let i = 0; i < strResult.length; i++) {
@@ -34,7 +32,14 @@ function cariMean(arr) {
                 break;
             }
         }
-        return result = Number(temp) + 1
+
+        // Proses pembulatan bilangan desimal
+        // cara lain dapat menggunakan fungsi Math.round(value)
+        if (result % 1 > 0.5) {
+            return result = Number(temp) + 1
+        } else {
+            return result = Number(temp)
+        }
     }
 }
 
@@ -44,8 +49,8 @@ console.log('Menghitung nilai rata-rata / mean dari suatu kumpulan nilai dengan 
 console.log('+++++++++++++++++++++++++++++++++++++++++++++++++')
 console.log('')
 
-console.log('Rata-rata dari nilai berikut 1, 2, 3, 4, 5 adalah ', cariMean([1, 2, 3, 4, 5])); // 3
-console.log('Rata-rata dari nilai berikut 3, 5, 7, 5, 3 adalah ', cariMean([3, 5, 7, 5, 3])); // 5
-console.log('Rata-rata dari nilai berikut 6, 5, 4, 7, 3 adalah ', cariMean([6, 5, 4, 7, 3])); // 5
-console.log('Rata-rata dari nilai berikut 1, 3, 3 adalah ', cariMean([1, 3, 3])); // 2
-console.log('Rata-rata dari nilai berikut 7, 7, 7, 7, 7 adalah ', cariMean([7, 7, 7, 7, 7])); // 7
+console.log('Rata-rata dari nilai berikut "1, 2, 3, 4, 5" adalah ', cariMean([1, 2, 3, 4, 5])); // 3
+console.log('Rata-rata dari nilai berikut "3, 5, 7, 5, 3" adalah ', cariMean([3, 5, 7, 5, 3])); // 5
+console.log('Rata-rata dari nilai berikut "6, 5, 4, 7, 3" adalah ', cariMean([6, 5, 4, 7, 3])); // 5
+console.log('Rata-rata dari nilai berikut "1, 3, 3" adalah ', cariMean([1, 3, 3])); // 2
+console.log('Rata-rata dari nilai berikut "7, 7, 7, 7, 7" adalah ', cariMean([7, 7, 7, 7, 7])); // 7
