@@ -32,4 +32,4 @@ console.log('Apakah deret ini merupakan deret geometri "1, 3, 9, 27, 81" ?', ten
 console.log('Apakah deret ini merupakan deret geometri "2, 4, 8, 16, 32" ?', tentukanDeretGeometri([2, 4, 8, 16, 32])); // true
 console.log('Apakah deret ini merupakan deret geometri "2, 4, 6, 8" ?', tentukanDeretGeometri([2, 4, 6, 8])); // false
 console.log('Apakah deret ini merupakan deret geometri "2, 6, 18, 54" ?', tentukanDeretGeometri([2, 6, 18, 54])); // true
-console.log('Apakah deret ini merupakan deret geometri "1, 2, 3, 4, 7, 9" ?', tentukanDeretGeometri([1, 2, 3, 4, 7, 9])); // false
+console.log('Apakah deret ini merupakan deret geometri "1, 2, 3, 4, 7, 9" ?', tentukanDeretGeometri([1, 2, 3, 4, 7, 9])); // false`

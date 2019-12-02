@@ -2,15 +2,13 @@ function angkaPalindrome(num) {
     var input = String(num)
     var temp = ''
 
-    if (input.length < 2 && input != 9) {
+    if (input.length < 2) {
         temp += num + 1
     } else {
-        for (let i = num; i < 10000; i++) {
+        for (let i = num; i < num * 2; i++) {
             var strNumber = ''
             strNumber += i
-            if (strNumber.length == 1) {
-                strNumber += i
-            } else if (palindrome(strNumber)) {
+            if (palindrome(strNumber)) {
                 temp = strNumber
                 break
             }
@@ -35,3 +33,6 @@ console.log(angkaPalindrome(10)); // 11
 console.log(angkaPalindrome(117)); // 121
 console.log(angkaPalindrome(175)); // 181
 console.log(angkaPalindrome(1000)); // 1001
+console.log(angkaPalindrome(08011994));
+console.log(angkaPalindrome(123456789));
+console.log(angkaPalindrome(1234));
