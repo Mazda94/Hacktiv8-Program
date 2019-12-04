@@ -14,7 +14,9 @@ function digitPerkalianMinimum(angka) {
     for (let i = 0; i < subFactor.length; i++) {
         temp.push([subFactor[i], (angka / subFactor[i])])
     }
-    console.log(temp)
+    console.log('Sebelum di slice >> ', temp)
+    temp = temp.slice(0, Math.ceil(temp.length / 2))
+    console.log('Sesudah di slice >> ', temp)
 
     let result = []
     for (let i = 0; i < temp.length; i++) {
