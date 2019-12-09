@@ -28,55 +28,6 @@
  * 1. Tidak boleh menggunakan built-in function: split, slice, splice, join
  */
 
-// function pair(str) {
-//     // Write your code here
-//     // console.log(str)
-//     let temp = []
-//     let indexSubstr = []
-//     let arrOfNames = []
-//     let result = []
-
-//     if (str.length === 0) {
-//         return 'No Pair'
-//     }
-
-//     for (let i = 0; i < str.length; i++) {
-//         if (i == 0) {
-//             indexSubstr.push(i)
-//         } else if (str[i] === ',') {
-//             indexSubstr.push(i)
-//             indexSubstr.push(i + 1)
-//         } else if (i === str.length) {
-//             indexSubstr.push(i)
-//         }
-//     }
-//     // console.log(indexSubstr)
-//     for (let i = 0; i < indexSubstr.length; i++) {
-//         temp.push(str.substring(indexSubstr[i], indexSubstr[i + 1]))
-//     }
-//     console.log(temp, '<< ini temp')
-//     for (let i = 0; i < temp.length; i++) {
-//         if (temp[i] !== ',') {
-//             arrOfNames.push(temp[i])
-//         }
-//     }
-//     console.log(arrOfNames)
-//     for (let i = 0; i < arrOfNames.length; i++) {
-//         if (arrOfNames.length % 2 == 0) {
-//             if (arrOfNames[i * 2] != undefined) {
-//                 result.push(arrOfNames[i * 2] + ' dan ' + arrOfNames[i * 2 + 1])
-//             }
-//         } else {
-//             if (arrOfNames[i * 2 + 1] != undefined) {
-//                 result.push(arrOfNames[i * 2] + ' dan ' + arrOfNames[i * 2 + 1])
-//             } else if (arrOfNames[i * 2] != undefined) {
-//                 result.push(arrOfNames[i * 2] + ' Sendirian')
-//             }
-//         }
-//     }
-//     return result
-// }
-
 
 function pair(str) {
     let temp = ''
