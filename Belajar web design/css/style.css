@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400");
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+
+html {
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+
+html {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #666;
+    line-height: 1.7;
+    text-rendering: optimizeLegibility;
+    -moz-font-feature-settings: "liga" on;
+}
+
+body {
+    margin: 0;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0.5em 0em;
+}
+
+a {
+    background: transparent;
+}
+
+a {
+    outline: 0;
+    text-decoration: none;
+    transition: .7s;
+    color: inherit;
+}
+
+.navbar {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    background-color: #6C63FF;
+    transition: 0.7s;
+}
+
+
+/* .navbar--extended {
+    background-color: transparent;
+} */
+
+.container {
+    width: 88%;
+    max-width: 1080px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.navbar__inner {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+    color: #fff;
+    transition: .7s;
+}
+
+.navbar__logo {
+    font-size: 1.325rem;
+    color: #fff;
+    transition: 0;
+    text-decoration: none;
+}
+
+.navbar__menu {
+    display: none;
+}
+
+.navbar__menu li {
+    display: inline-block;
+    margin-left: 4px;
+    backface-visibility: hidden;
+}
+
+.navbar__menu a {
+    color: #ddd;
+}
+
+@media (min-width: 992px) {
+    .navbar__menu li {
+        margin-left: 16pt;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar__menu {
+        display: block;
+    }
+    .navbar__menu a:hover {
+        opacity: 1;
+    }
+    .navbar__menu a::after {
+        display: block;
+        content: '';
+        border-bottom: solid 1px #ddd;
+        transform: scaleX(0);
+        transition: transform 250ms ease-in-out;
+    }
+    .navbar__menu a:hover:after {
+        transform: scaleX(1);
+    }
+}
