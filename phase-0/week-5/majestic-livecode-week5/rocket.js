@@ -87,7 +87,7 @@ console.log(word('aku tahu kamu tahu aku tapi kamu tahu kamu tapi aku tahu tapi 
 // true
 console.log(word('kuku kaki kuku kaki kaka kaka kaku kaku'))
 // true
-console.log(word('botak tabok batak botak tabok batak botak tabok batak botak tabok batak botak batok batak botak tabok batak botak tabok batak botak tabok batuk botak tabok batak botak tabok batak botak tabok batak'))
+console.log(word('botak tabok batak botak tabok batak botak tabok bacdtak botak tabok batak botak batok batak botak tabok batak botak tabok batak botak tabok batuk botak tabok batak botak tabok batak botak tabok batak'))
 // false
 console.log(word('cangkir cangkir kencur cengkeh kencur cangkir cangkir kencur cengkeh kencur cangkir kencur cengkeh cengkeh cengkeh cangkir cangkir kencur cengkeh kencur cangkir cangkir kencur cengkeh cangkir kencur cengkeh kencur cengkeh cengkeh cangkir cangkir kencur cengkeh kencur cengkeh'))
 //true
