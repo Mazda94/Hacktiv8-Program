@@ -40,8 +40,32 @@
  *    - Dilarang menggunakan .indexOf() .lastIndexOf() .findIndex() .reduce()
  */
 
-function checkCoordinate (board) {
+function checkCoordinate(board) {
   // your code here
+  let x = []
+  let z = []
+  let y = []
+  for (let i = 1; i < board.length; i++) {
+    for (let j = 1; j < board[i].length; j++) {
+      // console.log(board[i][j])
+      switch (board[i][j]) {
+        case 'x':
+          // console.log(board[0][j], board[i][0])
+          x.push(board[0][j] + board[i][0])
+          break
+        case 'y':
+          y.push(board[0][j] + board[i][0])
+          break
+        case 'z':
+          z.push(board[0][j] + board[i][0])
+          break
+      }
+    }
+  }
+  let result = []
+  result.push(x, z, y)
+
+  return result
 }
 
 var array = [
